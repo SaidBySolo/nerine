@@ -1,0 +1,28 @@
+[project]
+name = "nerine"
+version = "0.1.0"
+description = "Deadlock demo parser for python"
+readme = "README.md"
+authors = [
+    { name = "Ryu Juheon", email = "s@id.by.solo.moe" }
+]
+requires-python = ">=3.13"
+
+dependencies = [
+    "cramjam>=2.11.0",
+]
+
+dev-dependencies = [
+    "grpcio-tools>=1.76.0",
+    "protobuf>=6.33.2",
+]
+
+[project.scripts]
+nerine = "nerine:main"
+
+[build-system]
+requires = ["uv_build>=0.8.22,<0.9.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+cramjam = { git = "https://github.com/milesgranger/cramjam" }

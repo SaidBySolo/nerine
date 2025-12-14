@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
-from nerine.proto.demo import EDemoCommands
+from nerine.proto.common.demo import EDemoCommands
 
 
 @dataclass

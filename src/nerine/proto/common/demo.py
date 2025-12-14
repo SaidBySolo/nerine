@@ -39,7 +39,7 @@ from dataclasses import dataclass
 
 import betterproto2
 
-from nerine.proto.message_pool import default_message_pool
+from nerine.proto.common.message_pool import default_message_pool
 
 _COMPILER_VERSION = "0.9.0"
 betterproto2.check_compiler_version(_COMPILER_VERSION)
